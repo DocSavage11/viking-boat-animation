@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* WORLD CONTAINER START */
+
+.World-Container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+
+/* WORLD CONTAINER END */
+
+
+
+
+
+/* SKY CONTAINER START */
+
+.Sky-Container {
+    background-color: #deffff;
+
+    position: relative;
+    top: 0px;
+
+    height: 70%;
+    width: 100%;
+}
+
+.Sun {
+    position: absolute;
+    top: 50px;
+    left: 25%;
+
+    width: 100px;
+}
+
+
+
+/* SKY CONTAINER END */
+
+
+
+
+
+/* SEA CONTAINER START */
+
+.Sea-Container {
+    background-color: #203538;
+
+    position: relative;
+    top: 0px;
+
+    height: 30%;
+    width: 100%;
+}
+
+
+
+/* SEA CONTAINER END */
+
+
+
+
+
+
+
+/* MEDIA QUERIES START */
+
+
+
+/* MEDIA QUERIES END */
