@@ -56,13 +56,55 @@
 .Cloud-1 {
     position: absolute;
     top: 100px;
-    left: 0px;
+    left: -300px;
+
+    width: 300px;
+
+    z-index: 1;
+}
+
+.Cloud-2 {
+    position: absolute;
+    top: 150px;
+    left: -300px;
+
+    width: 200px;
+}
+
+.Cloud-3 {
+    position: absolute;
+    bottom: 100px;
+    left: -300px;
+
+    width: 50px;
+}
+
+.Cloud-4 {
+    position: absolute;
+    top: 100px;
+    left: -300px;
 
     width: 300px;
 }
 
-.Cloud-Left-Right {
-    animation: cloud-left-right 30s infinite linear;
+.Cloud-Left-Right-Cloud-1 {
+    animation: cloud-left-right 60s  infinite linear both, float 2s linear infinite;
+}
+
+.Cloud-Left-Right-Cloud-2 {
+    animation: cloud-left-right 120s 2s infinite linear both, float 2s linear infinite;
+}
+
+.Cloud-Left-Right-Cloud-3 {
+    animation: cloud-left-right 240s 2s infinite linear both, float 2s linear infinite;
+}
+
+.Cloud-Left-Right-Cloud-4 {
+    animation: cloud-left-right 120s 2s infinite linear, float 2s linear infinite;
+}
+
+.Cloud-Left-Right-Cloud-5 {
+    animation: cloud-left-right 120s 2s infinite linear, float 2s linear infinite;
 }
 
 
@@ -78,17 +120,17 @@
 }
 
 
-/* Sun Keyframe Animation End */
+/* ☀️ Sun Keyframe Animation End ☀️ */
 
 
-/* Cloud Keyframe Animation Start */
+/* ☁️ Cloud Keyframe Animation Start ☁️ */
 
 @keyframes cloud-left-right {
     from{ left: -300px;}
     to{ left: 100%;}
 }
 
-/* Cloud Keyframe Animation End */
+/* ☁️ Cloud Keyframe Animation End ☁️ */
 
 
 
@@ -110,6 +152,72 @@
     width: 100%;
 }
 
+
+/* Island Elements Start */
+
+.Island-1 {
+    position: absolute;
+    top: -100px;
+    left: 300px;
+
+    width: 200px;
+
+    z-index: 1;
+}
+
+
+
+.Island-2 {
+    position: absolute;
+    top: -45px;
+    right: 500px;
+
+    width: 50px;
+}
+
+/* Island Elements End */
+
+
+/* Boat Elements Start */
+
+.Boat {
+    position: absolute;
+    top: -38px;
+    right: -100px;
+
+    width: 50px;
+}
+
+
+.Boat-1-Right-Left {
+    animation: boat-1-right-left 60s 2s linear infinite, float 2s linear infinite;
+}
+
+.Float {
+    animation: float 2s linear infinite;
+}
+/* Boat Elements End */
+
+
+
+
+
+/* 🛶 Keyframe Animations Start 🛶 */
+
+@keyframes boat-1-right-left {
+    from{ right: -100px;}
+    to{ right: 100%;}
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(2px);
+    }
+}
+/* 🛶 Keyframe Animations End 🛶 */
 
 
 /* SEA CONTAINER END */
