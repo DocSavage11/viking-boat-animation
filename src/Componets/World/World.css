@@ -40,14 +40,18 @@
 
 .Sun {
     position: absolute;
-    top: 50px;
+    top: -100px;
     left: 25%;
 
     width: 100px;
 }
 
 .Rotate-Sun {
-    animation: rotateSun 20s infinite linear;
+    animation: rotateSun 5s infinite linear forwards, sunSet 60s infinite linear reverse;
+}
+
+.Sun-Set {
+    animation: sunSet 20s infinite linear;
 }
 
 
@@ -92,7 +96,7 @@
 }
 
 .Cloud-Left-Right-Cloud-2 {
-    animation: cloud-left-right 120s 2s infinite linear both, float 2s linear infinite;
+    animation: cloud-left-right 80s 2s infinite linear both, float 2s linear infinite;
 }
 
 .Cloud-Left-Right-Cloud-3 {
@@ -116,6 +120,16 @@
     100% {
         -webkit-transform: rotate(360deg); 
         transform:rotate(360deg); 
+    }
+}
+
+@keyframes sunSet {
+    from{
+        bottom: -100px;
+        transform: translateX(100%);
+    }
+    to{
+        top: 100%;
     }
 }
 
@@ -180,7 +194,7 @@
 
 /* Boat Elements Start */
 
-.Boat {
+.Boat-1 {
     position: absolute;
     top: -38px;
     right: -100px;
@@ -188,9 +202,21 @@
     width: 50px;
 }
 
+.Boat-2 {
+    position: absolute;
+    top: 50px;
+    right: -100px;
+
+    width: 100px;
+}
+
 
 .Boat-1-Right-Left {
     animation: boat-1-right-left 60s 2s linear infinite, float 2s linear infinite;
+}
+
+.Boat-2-Right-Left {
+    animation: boat-1-right-left 50s 2s linear infinite, float 2s linear infinite;
 }
 
 .Float {

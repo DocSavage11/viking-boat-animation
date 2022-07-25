@@ -17,7 +17,9 @@ const Sea = () => {
 
         {/* BOATS */}
 
-        <img src={require('../../Assets/Images/Viking-Boat-2.webp')} alt="" className="Boat Boat-1-Right-Left" />
+        <img src={require('../../Assets/Images/Viking-Boat-2.webp')} alt="" className="Boat-1 Boat-1-Right-Left" />
+
+        <img src={require('../../Assets/Images/Viking-Boat-4.webp')} alt="" className="Boat-2 Boat-2-Right-Left" />
 
         {/* BOATS */}
 
