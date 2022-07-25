@@ -35,6 +35,9 @@
     width: 100%;
 }
 
+
+/* ☀️ Sun Elements  */
+
 .Sun {
     position: absolute;
     top: 50px;
@@ -43,9 +46,53 @@
     width: 100px;
 }
 
+.Rotate-Sun {
+    animation: rotateSun 20s infinite linear;
+}
 
 
-/* SKY CONTAINER END */
+/* ☀️ Sun Elements End  */
+
+.Cloud-1 {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+
+    width: 300px;
+}
+
+.Cloud-Left-Right {
+    animation: cloud-left-right 30s infinite linear;
+}
+
+
+
+
+/* Sun Keyframe Animation Start */
+
+@keyframes rotateSun {
+    100% {
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    }
+}
+
+
+/* Sun Keyframe Animation End */
+
+
+/* Cloud Keyframe Animation Start */
+
+@keyframes cloud-left-right {
+    from{ left: -300px;}
+    to{ left: 100%;}
+}
+
+/* Cloud Keyframe Animation End */
+
+
+
+/*  SKY CONTAINER END */
 
 
 

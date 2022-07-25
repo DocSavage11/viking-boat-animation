@@ -5,7 +5,10 @@ import './World.css'
 const Sky = () => {
   return (
     <div className="Sky-Container">
-        <img src={require('../../Assets/Images/Suns/Sun-Type-2.webp')} alt="" className="Sun" />
+        <img src={require('../../Assets/Images/Suns/Sun-Type-2.webp')} alt="" className="Sun Rotate-Sun" />
+
+
+        <img src={require('../../Assets/Images/Clouds/Cloud-Type-2.webp')} alt="" className="Cloud-1 Cloud-Left-Right" />
     </div>
   )
 }
